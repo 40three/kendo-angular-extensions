@@ -1,0 +1,146 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "kendo-angular-extensions-demo": {
+      "root": "projects/kendo-angular-extensions-demo",
+      "sourceRoot": "projects/kendo-angular-extensions-demo/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/kendo-angular-extensions-demo",
+            "index": "projects/kendo-angular-extensions-demo/src/index.html",
+            "main": "projects/kendo-angular-extensions-demo/src/main.ts",
+            "polyfills": "projects/kendo-angular-extensions-demo/src/polyfills.ts",
+            "tsConfig": "projects/kendo-angular-extensions-demo/src/tsconfig.app.json",
+            "assets": [
+              "projects/kendo-angular-extensions-demo/src/favicon.ico",
+              "projects/kendo-angular-extensions-demo/src/assets"
+            ],
+            "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/scss/all.scss"
+              },
+              "projects/kendo-angular-extensions-demo/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/kendo-angular-extensions-demo/src/environments/environment.ts",
+                  "with": "projects/kendo-angular-extensions-demo/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "kendo-angular-extensions-demo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "kendo-angular-extensions-demo:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "kendo-angular-extensions-demo:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-angular-extensions-demo/src/test.ts",
+            "polyfills": "projects/kendo-angular-extensions-demo/src/polyfills.ts",
+            "tsConfig": "projects/kendo-angular-extensions-demo/src/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-angular-extensions-demo/src/karma.conf.js",
+            "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/scss/all.scss"
+              },
+              "projects/kendo-angular-extensions-demo/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/kendo-angular-extensions-demo/src/favicon.ico",
+              "projects/kendo-angular-extensions-demo/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-angular-extensions-demo/src/tsconfig.app.json",
+              "projects/kendo-angular-extensions-demo/src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "kendo-angular-extensions": {
+      "root": "projects/kendo-angular-extensions",
+      "sourceRoot": "projects/kendo-angular-extensions/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/kendo-angular-extensions/tsconfig.lib.json",
+            "project": "projects/kendo-angular-extensions/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/kendo-angular-extensions/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kendo-angular-extensions/src/test.ts",
+            "tsConfig": "projects/kendo-angular-extensions/tsconfig.spec.json",
+            "karmaConfig": "projects/kendo-angular-extensions/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kendo-angular-extensions/tsconfig.lib.json",
+              "projects/kendo-angular-extensions/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "kendo-angular-extensions-demo"
+}
