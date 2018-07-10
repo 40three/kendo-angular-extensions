@@ -3,3 +3,4 @@
  */
 
 export * from './lib/context-menu/ContextMenuModule';
+export * from './lib/navigation/NavigationModule';
