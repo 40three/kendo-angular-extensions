@@ -5,7 +5,7 @@ IMPORTANT: While this library is free and open source, it depends on commerciall
 
 ## Docs
 
-[See docs in library project](projects/kendo-angular-extensions/src/README.md)
+[See docs in library project](projects/kendo-angular-extensions/README.md)
 
 ## Publish to npm
 
