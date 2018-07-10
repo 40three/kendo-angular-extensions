@@ -15,8 +15,8 @@ We just started to move generally usefull components from our internal libs to t
 
 ### Navigation
 
-* [Navigate back directive](docs/back-directive.md)
+* [Navigate back directive]https://github.com/40three/kendo-angular-extensions/blob/master/projects/kendo-angular-extensions/docs/back-directive.md)
 
 ### Menu
 
-* [Context menu service](docs/context-menu-service.md)
+* [Context menu service](https://github.com/40three/kendo-angular-extensions/blob/master/projects/kendo-angular-extensions/docs/context-menu-service.md)
