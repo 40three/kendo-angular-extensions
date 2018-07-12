@@ -13,10 +13,14 @@ We just started to move generally usefull components from our internal libs to t
 
 ## Modules
 
-### Navigation
+### Buttons
 
-* [Navigate back directive](https://github.com/40three/kendo-angular-extensions/blob/master/projects/kendo-angular-extensions/docs/back-directive.md)
+* [Link button](https://github.com/40three/kendo-angular-extensions/blob/master/projects/kendo-angular-extensions/docs/link-button.md) - applies button styling to links.
 
 ### Menu
 
-* [Context menu service](https://github.com/40three/kendo-angular-extensions/blob/master/projects/kendo-angular-extensions/docs/context-menu-service.md)
+* [Context menu service](https://github.com/40three/kendo-angular-extensions/blob/master/projects/kendo-angular-extensions/docs/context-menu-service.md) - opens kendo menu in a popup.
+
+### Navigation
+
+* [Navigate back directive](https://github.com/40three/kendo-angular-extensions/blob/master/projects/kendo-angular-extensions/docs/back-directive.md) - navigate to previous url.

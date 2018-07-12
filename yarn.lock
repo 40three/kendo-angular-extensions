@@ -196,6 +196,14 @@
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
 
+"@progress/kendo-angular-buttons@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-buttons/-/kendo-angular-buttons-4.1.2.tgz#d2bb33a3421fb35c6aab7d813ea98b01bc4406df"
+  dependencies:
+    "@progress/kendo-angular-popup" "^2.0.0"
+    "@progress/kendo-schematics" "^0.2.0"
+    tslib "^1.7.0"
+
 "@progress/kendo-angular-l10n@^1.1.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-angular-l10n/-/kendo-angular-l10n-1.2.0.tgz#314a84dfea1255067a4dcd1ef7928f63f067b5ef"
@@ -210,7 +218,7 @@
     "@progress/kendo-schematics" "^0.2.0"
     tslib "^1.7.0"
 
-"@progress/kendo-angular-popup@^2.2.0":
+"@progress/kendo-angular-popup@^2.0.0", "@progress/kendo-angular-popup@^2.2.0":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@progress/kendo-angular-popup/-/kendo-angular-popup-2.4.1.tgz#732fd06e8960c95130a533e09eb6c2383b58911c"
   dependencies:

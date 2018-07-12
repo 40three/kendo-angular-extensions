@@ -1,0 +1,18 @@
+<h1>Link button test page</h1>
+<div>
+    <h3>Default</h3>
+    <button kendoButton>Kendo button</button>
+    <a kendoButton href="https://40three.io">Link button</a>
+</div>
+
+<div *ngFor="let look of ['default', 'bare', 'flat', 'outline']">
+    <h3>Look {{ look }}</h3>
+    <button kendoButton [look]="look">Kendo button</button>
+    <a kendoButton [look]="look" href="https://40three.io">Link button</a>
+</div>
+
+<div *ngFor="let look of ['default', 'bare', 'flat', 'outline']">
+    <h3>Primary, Look {{ look }}</h3>
+    <button kendoButton [primary]="true" [look]="look">Kendo button</button>
+    <a kendoButton [primary]="true" [look]="look" href="https://40three.io">Link button</a>
+</div>

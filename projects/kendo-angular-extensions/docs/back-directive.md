@@ -18,7 +18,7 @@ In your app or feature module:
       ...
     })
 
-## Example
+## Usage
 
     <a back>Navigate back</a>
     <button back>Cancel</button>
