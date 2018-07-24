@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "@progress/kendo-angular-buttons": "^4.1.2",
+    "@progress/kendo-angular-dialog": "^3.6.2",
     "@progress/kendo-angular-l10n": "^1.1.0",
     "@progress/kendo-angular-menu": "^0.5.0",
     "@progress/kendo-theme-default": "latest",

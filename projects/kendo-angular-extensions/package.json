@@ -1,6 +1,6 @@
 {
   "name": "@40three/kendo-angular-extensions",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "(MIT OR Apache-2.0)",
   "homepage": "https://github.com/40three/kendo-angular-extensions",
   "bugs": "https://github.com/40three/kendo-angular-extensions/issues",
@@ -13,6 +13,7 @@
     "@angular/common": "^6.0.0",
     "@angular/core": "^6.0.0",
     "@progress/kendo-angular-buttons": "^4.1.2",
+    "@progress/kendo-angular-dialog": "^3.6.2",
     "@progress/kendo-angular-menu": "^0.5.0",
     "@progress/kendo-angular-popup": "^2.4.1"
   }

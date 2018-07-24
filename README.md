@@ -7,6 +7,10 @@ IMPORTANT: While this library is free and open source, it depends on commerciall
 
 [See docs in library project](projects/kendo-angular-extensions/README.md)
 
+## Build
+
+    yarn run dist
+
 ## Publish to npm
 
     npm run publish

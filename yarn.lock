@@ -204,6 +204,15 @@
     "@progress/kendo-schematics" "^0.2.0"
     tslib "^1.7.0"
 
+"@progress/kendo-angular-dialog@^3.6.2":
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-dialog/-/kendo-angular-dialog-3.6.2.tgz#afea442a7f8ba19529d93b7fc2b935f812921c46"
+  dependencies:
+    "@progress/kendo-popup-common" "^1.2.3"
+    "@progress/kendo-schematics" "^0.2.0"
+    "@telerik/kendo-draggable" "^1.5.1"
+    tslib "^1.7.0"
+
 "@progress/kendo-angular-l10n@^1.1.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-angular-l10n/-/kendo-angular-l10n-1.2.0.tgz#314a84dfea1255067a4dcd1ef7928f63f067b5ef"
@@ -226,7 +235,7 @@
     "@progress/kendo-schematics" "^0.2.0"
     tslib "^1.7.0"
 
-"@progress/kendo-popup-common@^1.6.0":
+"@progress/kendo-popup-common@^1.2.3", "@progress/kendo-popup-common@^1.6.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-popup-common/-/kendo-popup-common-1.6.0.tgz#aabe9af0e1eff03ba618dd6d0dad56ba7d4463be"
 
@@ -256,6 +265,10 @@
     rxjs "^6.0.0"
     semver "^5.3.0"
     semver-intersect "^1.1.2"
+
+"@telerik/kendo-draggable@^1.5.1":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-1.8.2.tgz#c0a4026f6aaffa6b0dabb8c6d4d7bd7e6754135d"
 
 "@types/estree@0.0.39":
   version "0.0.39"
