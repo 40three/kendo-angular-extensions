@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AlertDialog } from './AlertDialog';
+import { NgModule } from '@angular/core';
+import { AlertDialog } from './components/dialog/AlertDialog';
+import { AlertService } from './services/AlertService';
 
 @NgModule({
     declarations: [
@@ -10,12 +11,16 @@ import { AlertDialog } from './AlertDialog';
         CommonModule,
     ],
     entryComponents: [
-        AlertDialog
+        AlertDialog,
+    ],
+    providers: [
+        AlertService,
     ]
 })
 export class AlertModule {
 
 }
 
-export * from './AlertService';
-export * from './IAlertResult';
+export * from './services/AlertService';
+export * from './services/IAlertResult';
+

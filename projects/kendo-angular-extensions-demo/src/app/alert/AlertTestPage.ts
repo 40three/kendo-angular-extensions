@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { AlertService } from "../../../../kendo-angular-extensions/src/lib/alert/AlertService";
+import { AlertService } from "../../../../kendo-angular-extensions/src/lib/alert/AlertModule";
 
 @Component({
     templateUrl: './AlertTestPage.html'
